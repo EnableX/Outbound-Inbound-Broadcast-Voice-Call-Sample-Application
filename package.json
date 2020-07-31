@@ -1,0 +1,11 @@
+{
+  "name": "enablexclientexample",
+  "version": "1.0.0",
+  "description": "Enablex Client Examples",
+  "main": "client.js",
+  "scripts": {
+    "postinstall": "(cd inbound && npm install); (cd outbound && npm install); (cd broadcast && npm install);"
+  },
+  "author": "amit.s",
+  "license": "ISC"
+}
