@@ -2,7 +2,7 @@
 This example contains instructions how users can initiate Outbound, Inbound & Broadcast Calls.
 
 ## Prerequisite
-- You will need Enablex Application credentials, app_id and app_key.
+- You will need Enablex Application credentials, app_id and app_key. To find credentials, register with EnableX (https://portal.enablex.io/cpaas/trial-sign-up/).
 - You will need to configure the phone number you purchased from Enablex.
 - You will need a place for hosting this application either cloud or local machine.
 
