@@ -1,5 +1,46 @@
-# **Basic Client Examples to demonstrate Outbound, Inbound & Broadcast Calls using Enablex Voice APIs. **
-This example contains instructions how users can initiate Outbound, Inbound & Broadcast Calls.
+# EnableX Programmable Voice API Examples: Outbound, Inbound, and Broadcast Call Scenarios
+
+Programmable Voice API Client Examples: Outbound, Inbound, and Broadcast Calls 
+
+These client examples demonstrate how to initiate Outbound, Inbound, and Broadcast Calls using EnableX Programmable Voice APIs. To get started, you'll need EnableX Application credentials (app_id and app_key) obtained through registration on the EnableX portal. 
+
+Installation Steps: 
+
+    Clone the repository. 
+
+    Navigate to the cloned directory. 
+
+    Run npm install to install dependencies. 
+
+Configuration Setup: 
+
+    Add your app_id and app_key in the config file. 
+
+    Customize configurations for Outbound, Inbound, and Broadcast call clients in their respective config files. 
+
+For Inbound Calls: 
+
+    Configure a publicly reachable Webhook URL in the portal to receive WebHook events. 
+
+    If running the server locally, use ngrok options from the configuration. 
+
+    Ensure that the Webhook URL in the portal matches your server's URL to receive calls. 
+
+    Configure action_on_connect for Inbound calls. 
+
+Webhook Security: 
+
+    Enablex Voice Server encrypts Webhook payloads using 'md5' encryption with the app_id as the key. 
+
+    The client must decrypt the payload using the provided app_id, algorithm, format, and encoding parameters. 
+
+Starting the Client Application: 
+
+    For Outbound Calls, run cd outbound followed by node client-outbound.js. 
+
+    For Inbound Calls, run cd inbound followed by node client-inbound.js. 
+
+    For Broadcast Calls, run cd broadcast followed by node client-broadcast.js 
 
 ## Prerequisite
 - You will need Enablex Application credentials, app_id and app_key. To find credentials, register with EnableX (https://portal.enablex.io/cpaas/trial-sign-up/).
